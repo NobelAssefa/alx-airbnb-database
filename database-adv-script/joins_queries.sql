@@ -27,6 +27,8 @@ SELECT
     p.description,
     p.location,
     p.pricepernight,
+    P.created_at AS created_date,
+    p.updated_at AS updated_date,
     r.review_id,
     r.user_id AS reviewer_id,
     r.rating,
