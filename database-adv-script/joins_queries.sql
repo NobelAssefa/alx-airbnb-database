@@ -37,23 +37,3 @@ FROM
 LEFT JOIN 
     Review r ON p.property_id = r.property_id;
 
-
-//FULL_OUTER_JOIN//
-
-SELECT 
-    u.user_id,
-    u.first_name,
-    u.last_name,
-    u.email,
-    b.booking_id,
-    b.property_id,
-    b.start_date,
-    b.end_date,
-    b.total_price,
-    b.status,
-    b.created_at AS booking_created_at
-FROM 
-    User u
-FULL OUTER JOIN 
-    Booking b ON u.user_id = b.user_id;
-
