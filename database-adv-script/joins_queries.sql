@@ -1,4 +1,5 @@
-//INNER_JOIN
+//INNER_JOIN//
+    
 SELECT 
     b.booking_id,
     b.property_id,
