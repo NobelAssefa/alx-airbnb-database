@@ -19,6 +19,7 @@ FROM
 INNER JOIN 
     User u ON b.user_id = u.user_id;
 
+//LEFT_JOIN
 
 SELECT 
     p.property_id,
