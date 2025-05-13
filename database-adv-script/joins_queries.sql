@@ -19,7 +19,6 @@ FROM
 INNER JOIN 
     User u ON b.user_id = u.user_id;
 
-//LEFT_JOIN//
 
 SELECT 
     p.property_id,
@@ -36,4 +35,3 @@ FROM
     Property p
 LEFT JOIN 
     Review r ON p.property_id = r.property_id;
-
