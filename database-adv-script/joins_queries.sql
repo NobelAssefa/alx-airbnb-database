@@ -38,7 +38,7 @@ LEFT JOIN
     Review r ON p.property_id = r.property_id;
 
 
-//OUTER_JOIN//
+//FULL_OUTER_JOIN//
 
 SELECT 
     u.user_id,
