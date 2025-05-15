@@ -1,5 +1,3 @@
-
-
 CREATE INDEX idx_user_email ON User(email);
 CREATE INDEX idx_user_id ON User(user_id);
 CREATE INDEX idx_user_role ON User(role);
@@ -17,3 +15,7 @@ CREATE INDEX idx_property_host_id ON Property(host_id);
 CREATE INDEX idx_property_location ON Property(location);
 CREATE INDEX idx_property_pricepernight ON Property(pricepernight);
 CREATE INDEX idx_property_created_at ON Property(created_at);
+
+
+EXPLAIN ANALYZE
+SELECT * FROM Booking WHERE user_id = '681a1366ea39678fae2c96f7';
